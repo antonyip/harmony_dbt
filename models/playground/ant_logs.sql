@@ -12,6 +12,7 @@ select
     log_id as u_key,
     block_id as block_id,
     block_timestamp as block_timestamp,
+    ingested_at,
     tx_hash as tx_id,
     native_contract_address, -- this is the contract address(one) that emitted this event
     evm_contract_address as eth_contract_address, -- this is the contract address(0x) that emitted this event
